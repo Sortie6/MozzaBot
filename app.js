@@ -1,7 +1,7 @@
 /*Variable area*/
 var Discord = require('discord.io');
 var bot = new Discord.Client({
-	token: "MjQwNjQxODk3NTc0NTYzODQw.CvGUGQ.JAsaMfOnKRO834NUkudJqjOcwmY",
+	token: "",
 	autorun: true
 });
 
@@ -11,8 +11,6 @@ bot.on("ready", function(event) {
 	console.log("Connected!");
 	console.log("Logged in as: ");
 	console.log(bot.username + " - (" + bot.id + ")");
-	
-	console.log(bot.getAllUsers());
 });
 
 bot.on("message", function(user, userID, channelID, message, event) {
